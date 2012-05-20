@@ -1,1 +1,2 @@
 a patch to luac program, to dump same information but in lua format.
+based on lua 5.1.5.
