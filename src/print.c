@@ -108,7 +108,7 @@ static void PrintCode(const Proto* f)
     break;
   }
   printf("\",\n"); // end of opargs
-  printf("constant = [[");
+  printf("constant = [=====[");
   switch (o)
   {
    case OP_LOADK:
@@ -168,7 +168,7 @@ static void PrintCode(const Proto* f)
    default:
     break;
   }
-  printf("]],\n"); // end of constant 
+  printf("]=====],\n"); // end of constant 
   printf("},\n"); // end of opcode
  }
  printf("},\n");
