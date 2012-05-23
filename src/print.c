@@ -169,9 +169,9 @@ static void PrintCode(const Proto* f)
     break;
   }
   printf("]],\n"); // end of constant 
-  printf("}, -- end of one opcode\n"); // end of opcode
+  printf("},\n"); // end of opcode
  }
- printf("},-- end of opcodes\n");
+ printf("},\n");
 }
 
 #define SS(x)	(x==1)?"":"s"
@@ -202,9 +202,9 @@ static void PrintHeader(const Proto* f)
  printf("lastlinedefined = %d,\n", f->lastlinedefined);
  printf("sizecode = %d,\n", f->sizecode);
  printf("address = %p,\n", VOID(f));
- printf("nunparams = %d,\n", f->numparams);
+ printf("numparams = %d,\n", f->numparams);
  printf("vararg = %s,\n", f->is_vararg?"true":"false");
- printf("maxstatcksize = %d,\n", f->maxstacksize);
+ printf("maxstacksize = %d,\n", f->maxstacksize);
  printf("nups = %d,\n", f->nups);
  printf("sizelocvars = %d,\n", f->sizelocvars);
  printf("sizek = %d,\n", f->sizek);
