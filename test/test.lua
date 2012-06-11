@@ -1,6 +1,6 @@
 
 
-LUAC = "../lua-5.1.5/src/luac.exe"
+LUAC = "../lua-5.1.5/src/luac"
 
 -- return a flat table of functions
 -- ogirinal functions are in tree structure
